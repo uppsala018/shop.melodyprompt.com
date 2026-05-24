@@ -31,6 +31,7 @@ export interface Book {
   pages: number;
   promptCount: number;
   priceEnvVar: string;
+  downloadUrl: string;
   chapters: BookChapter[];
   samplePrompts: SamplePrompt[];
   faqs: BookFaq[];
@@ -62,6 +63,7 @@ export const BOOKS: Book[] = [
     pages: 47,
     promptCount: 200,
     priceEnvVar: "STRIPE_PRICE_BOOK_01",
+    downloadUrl: "https://htvctrxs7kiprhmr.public.blob.vercel-storage.com/The_Ultimate_Sad_Song_Prompt_Bible.pdf",
     chapters: [
       {
         number: 1,
@@ -219,6 +221,7 @@ export const BOOKS: Book[] = [
     pages: 47,
     promptCount: 200,
     priceEnvVar: "STRIPE_PRICE_BOOK_02",
+    downloadUrl: "https://htvctrxs7kiprhmr.public.blob.vercel-storage.com/Cinematic_AI_Music_Prompts.pdf",
     chapters: [
       {
         number: 1,
@@ -373,6 +376,7 @@ export const BOOKS: Book[] = [
     pages: 47,
     promptCount: 200,
     priceEnvVar: "STRIPE_PRICE_BOOK_03",
+    downloadUrl: "https://htvctrxs7kiprhmr.public.blob.vercel-storage.com/The_Hip-Hop_Prompt_Architect.pdf",
     chapters: [
       {
         number: 1,
@@ -523,6 +527,7 @@ export const BOOKS: Book[] = [
     pages: 47,
     promptCount: 200,
     priceEnvVar: "STRIPE_PRICE_BOOK_04",
+    downloadUrl: "https://htvctrxs7kiprhmr.public.blob.vercel-storage.com/The_Complete_Lo-Fi_Atmosphere_Prompt_Collection.pdf",
     chapters: [
       {
         number: 1,
@@ -674,6 +679,7 @@ export const BOOKS: Book[] = [
     pages: 47,
     promptCount: 200,
     priceEnvVar: "STRIPE_PRICE_BOOK_05",
+    downloadUrl: "https://htvctrxs7kiprhmr.public.blob.vercel-storage.com/Pop_Hit_Formula.pdf",
     chapters: [
       {
         number: 1,
@@ -824,6 +830,7 @@ export const BOOKS: Book[] = [
     pages: 47,
     promptCount: 200,
     priceEnvVar: "STRIPE_PRICE_BOOK_06",
+    downloadUrl: "https://htvctrxs7kiprhmr.public.blob.vercel-storage.com/Dark_Ambient_Horror_AI_Music_Prompts.pdf",
     chapters: [
       {
         number: 1,
@@ -976,6 +983,7 @@ export const BOOKS: Book[] = [
     pages: 47,
     promptCount: 200,
     priceEnvVar: "STRIPE_PRICE_BOOK_07",
+    downloadUrl: "https://htvctrxs7kiprhmr.public.blob.vercel-storage.com/EDM_Drop_Architect.pdf",
     chapters: [
       {
         number: 1,
@@ -1126,6 +1134,7 @@ export const BOOKS: Book[] = [
     pages: 47,
     promptCount: 200,
     priceEnvVar: "STRIPE_PRICE_BOOK_08",
+    downloadUrl: "https://htvctrxs7kiprhmr.public.blob.vercel-storage.com/Worship_Gospel_AI_Music_Prompt_Handbook.pdf",
     chapters: [
       {
         number: 1,
@@ -1276,6 +1285,7 @@ export const BOOKS: Book[] = [
     pages: 47,
     promptCount: 200,
     priceEnvVar: "STRIPE_PRICE_BOOK_09",
+    downloadUrl: "https://htvctrxs7kiprhmr.public.blob.vercel-storage.com/Country_Folk_Storytelling_Prompt_Vault.pdf",
     chapters: [
       {
         number: 1,
@@ -1430,6 +1440,7 @@ export const BOOKS: Book[] = [
     pages: 52,
     promptCount: 200,
     priceEnvVar: "STRIPE_PRICE_BOOK_10",
+    downloadUrl: "https://htvctrxs7kiprhmr.public.blob.vercel-storage.com/The_Ultimate_Udio_Suno_Prompt_Mastery_Guide.pdf",
     chapters: [
       {
         number: 1,
