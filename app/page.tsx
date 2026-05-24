@@ -157,7 +157,7 @@ export default function HomePage() {
               "2,000 prompts",
               "70 chapters",
               "10 genres",
-              "6×9\" PDF + EPUB",
+              "6×9\" PDF",
               "Lifetime updates",
             ].map((t) => (
               <span key={t} className="flex items-center gap-1.5">
@@ -227,7 +227,7 @@ export default function HomePage() {
               />
             </div>
             <p className="mt-4 font-mono text-xs text-white/30">
-              Instant download · PDF + EPUB · All 10 genres · Lifetime updates
+              Instant PDF download · All 10 genres · Lifetime updates
             </p>
           </div>
         </section>

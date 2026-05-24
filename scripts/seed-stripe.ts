@@ -55,7 +55,7 @@ async function createBookProduct(book: (typeof BOOKS)[number]) {
 async function createBundleProduct() {
   const product = await stripe.products.create({
     name: "MelodyPrompt — All 10 Books Bundle",
-    description: "Complete collection: 2,000 AI music prompts across 10 genres. PDF + EPUB.",
+    description: "Complete collection: 2,000 AI music prompts across 10 genres. PDF.",
     metadata: { bookId: "bundle" },
   });
 

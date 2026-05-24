@@ -23,13 +23,9 @@ async function getDownloadLinks(bookIds: string[]): Promise<{ label: string; url
       const pdfBlob = blobs.blobs.find(
         (b) => b.pathname.includes(`book-${id}`) && b.pathname.endsWith(".pdf")
       );
-      const epubBlob = blobs.blobs.find(
-        (b) => b.pathname.includes(`book-${id}`) && b.pathname.endsWith(".epub")
-      );
       const links = [];
       if (pdfBlob) links.push({ label: `${book.title} — PDF`, url: pdfBlob.url });
-      if (epubBlob) links.push({ label: `${book.title} — EPUB`, url: epubBlob.url });
-      if (!pdfBlob && !epubBlob) {
+      if (!pdfBlob) {
         links.push({
           label: `${book.title} — contact support@melodyprompt.com`,
           url: "#",

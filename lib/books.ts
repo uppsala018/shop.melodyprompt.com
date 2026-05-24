@@ -164,7 +164,7 @@ export const BOOKS: Book[] = [
       },
       {
         q: "What file formats are included?",
-        a: "You receive both PDF (6×9\", print-ready) and EPUB (for e-readers and Kindle). Download links are available immediately after purchase.",
+        a: "You receive a PDF (6×9\", print-ready). Your download link is available immediately after purchase. If you prefer EPUB for your e-reader, you can convert the PDF using a free tool such as Calibre.",
       },
       {
         q: "How many unique prompts are in this book?",

@@ -24,7 +24,7 @@ export async function generateMetadata({
   if (!book) return {};
 
   const title = `${book.title} — ${book.promptCount} ${book.primaryKeyword} for Suno & Udio`;
-  const description = `${book.subtitle}. ${book.promptCount} studio-ready AI music prompts built on the GMIV framework, tested on Suno v4 and Udio. $9.99 — instant PDF + EPUB download.`;
+  const description = `${book.subtitle}. ${book.promptCount} studio-ready AI music prompts built on the GMIV framework, tested on Suno v4 and Udio. $9.99 — instant PDF download.`;
 
   return {
     title,
@@ -240,7 +240,7 @@ export default function BookPage({
               <div className="flex flex-wrap gap-4 font-mono text-xs text-white/50">
                 {[
                   "Instant download",
-                  "PDF + EPUB",
+                  "PDF download",
                   `${book.pages} pages`,
                   `${book.promptCount} prompts`,
                   "Lifetime updates",
@@ -457,8 +457,7 @@ export default function BookPage({
             Ready to get started?
           </h2>
           <p className="font-serif text-white/60 mb-6">
-            {book.promptCount} studio-ready {book.primaryKeyword} · PDF + EPUB ·
-            Instant download
+            {book.promptCount} studio-ready {book.primaryKeyword} · Instant PDF download
           </p>
           <div className="flex items-baseline justify-center gap-3 mb-6">
             <span className="price-sale text-3xl">${book.salePrice.toFixed(2)}</span>
