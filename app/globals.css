@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-bricolage: "Bricolage Grotesque", system-ui, sans-serif;
+    --font-newsreader: "Newsreader", Georgia, serif;
+    --font-jetbrains: "JetBrains Mono", monospace;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-paper text-ink;
+    font-family: var(--font-newsreader);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-bricolage);
+  }
+
+  code,
+  kbd,
+  pre {
+    font-family: var(--font-jetbrains);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 py-3 font-display text-sm font-bold text-accentInk transition-all hover:brightness-110 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-white/20 bg-white/5 px-6 py-3 font-display text-sm font-bold text-white transition-all hover:bg-white/10 active:scale-95;
+  }
+
+  .price-sale {
+    font-family: var(--font-jetbrains);
+    @apply text-2xl font-bold text-accent;
+  }
+
+  .price-list {
+    font-family: var(--font-jetbrains);
+    @apply text-sm text-white/40 line-through;
+  }
+
+  .eyebrow {
+    font-family: var(--font-jetbrains);
+    @apply text-xs font-medium uppercase tracking-widest text-accent/80;
+  }
+
+  .card-dark {
+    @apply rounded-2xl border border-white/[0.08] bg-white/[0.04] backdrop-blur-sm;
+  }
+
+  .section-dark {
+    @apply bg-night text-white;
+  }
+}
