@@ -5,6 +5,7 @@ import { useState } from "react";
 interface FAQItem {
   q: string;
   a: string;
+  link?: { href: string; label: string };
 }
 
 interface FAQProps {
