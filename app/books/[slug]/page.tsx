@@ -40,7 +40,7 @@ export async function generateMetadata({
       url: `https://shop.melodyprompt.com/books/${book.slug}`,
       images: [
         {
-          url: `/og/${book.id}.png`,
+          url: `/og/${book.id}`,
           width: 1200,
           height: 630,
           alt: `${book.title} — ${book.primaryKeyword}`,
@@ -71,13 +71,6 @@ function buildProductJsonLd(book: ReturnType<typeof getBookBySlug>) {
       availability: "https://schema.org/InStock",
       itemCondition: "https://schema.org/NewCondition",
       url: `https://shop.melodyprompt.com/books/${book.slug}`,
-    },
-    // TODO: Replace placeholder with real aggregateRating once reviews are collected
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "200",
-      bestRating: "5",
     },
   };
 }

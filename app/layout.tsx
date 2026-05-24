@@ -72,7 +72,6 @@ export default function RootLayout({
     <html lang="en" className={`${bricolage.variable} ${newsreader.variable} ${jetbrains.variable}`}>
       <head>
         <link rel="canonical" href="https://shop.melodyprompt.com" />
-        <link rel="icon" href="/favicon.ico" />
         {GA_ID && (
           <>
             <Script

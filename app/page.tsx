@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     url: "https://shop.melodyprompt.com",
     images: [
       {
-        url: "/og/landing.png",
+        url: "/og",
         width: 1200,
         height: 630,
         alt: "MelodyPrompt Shop — Studio-Ready AI Music Prompts",
