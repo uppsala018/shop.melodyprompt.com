@@ -52,6 +52,16 @@ export function FAQ({ items, heading = "Frequently asked" }: FAQProps) {
               className="px-5 pb-4 font-serif text-sm text-white/70 leading-relaxed"
             >
               {item.a}
+              {item.link && (
+                <a
+                  href={item.link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 block text-accent underline-offset-2 hover:underline transition-colors"
+                >
+                  {item.link.label} →
+                </a>
+              )}
             </dd>
           </div>
         ))}

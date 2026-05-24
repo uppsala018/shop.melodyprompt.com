@@ -7,6 +7,7 @@ export interface BookChapter {
 export interface BookFaq {
   q: string;
   a: string;
+  link?: { label: string; href: string };
 }
 
 export interface SamplePrompt {
@@ -141,14 +142,17 @@ export const BOOKS: Book[] = [
       {
         q: "Can I release AI music on Spotify?",
         a: "Yes. Spotify accepts AI-generated music through approved distributors. You need to disclose AI involvement on the distributor form — DistroKid, TuneCore, and CD Baby all have AI declaration fields as of 2026. The music lands in normal catalog search and playlists.",
+        link: { label: "Read our full release guide at melodyprompt.com", href: "https://melodyprompt.com/guides/ai-music-release-checklist" },
       },
       {
         q: "Does DistroKid allow AI music?",
         a: "DistroKid allows AI-assisted music and requires you to select 'AI-assisted' during upload. Fully AI-generated tracks (no human performance) are permitted but must be declared. Always check their current TOS before releasing.",
+        link: { label: "Read our full distribution guide at melodyprompt.com", href: "https://melodyprompt.com/guides/distribute-ai-music" },
       },
       {
         q: "How do I use a custom prompt in Suno AI in 2026?",
         a: "In Suno v4, click 'Custom Mode', paste your prompt into the Style field, add an optional title and lyrics, and click Create. Longer, more specific prompts — like the ones in this book — consistently outperform single-word genre tags.",
+        link: { label: "Read our full Suno guide at melodyprompt.com", href: "https://melodyprompt.com/guides/how-to-create-ai-music" },
       },
       {
         q: "What is the GMIV framework?",
@@ -303,14 +307,17 @@ export const BOOKS: Book[] = [
       {
         q: "Can I release AI music on Spotify?",
         a: "Yes — Spotify accepts AI music through distributors. DistroKid and TuneCore both support AI music uploads with the required disclosure. Sync licensing of AI music is still evolving, but for direct-to-consumer releases the path is clear.",
+        link: { label: "Read our full release guide at melodyprompt.com", href: "https://melodyprompt.com/guides/ai-music-release-checklist" },
       },
       {
         q: "Does DistroKid allow AI music?",
         a: "DistroKid allows AI-assisted and AI-generated music. You must select the 'AI-assisted' or 'AI-generated' option during upload. Review their most current TOS as this area is actively being updated.",
+        link: { label: "Read our full distribution guide at melodyprompt.com", href: "https://melodyprompt.com/guides/distribute-ai-music" },
       },
       {
         q: "How do I use a custom prompt in Suno AI for cinematic music?",
         a: "In Suno v4 Custom Mode, paste the full GMIV prompt into the Style box. For cinematic music, include BPM, key, and whether you want vocals. Use the Title field to name the cue (e.g., 'Act 3 Opening') so you can reference it when chaining with the Continue feature.",
+        link: { label: "Read our full Suno guide at melodyprompt.com", href: "https://melodyprompt.com/guides/how-to-create-ai-music" },
       },
       {
         q: "What is the GMIV framework?",
@@ -454,14 +461,17 @@ export const BOOKS: Book[] = [
       {
         q: "Can I release AI music on Spotify?",
         a: "Yes. Spotify accepts AI music through distributors like DistroKid, TuneCore, and CD Baby as long as you declare AI involvement during the upload process. Hip-hop is one of the most commercially active genres on Spotify — getting your AI track into playlists follows the same pitching process as any release.",
+        link: { label: "Read our full release guide at melodyprompt.com", href: "https://melodyprompt.com/guides/ai-music-release-checklist" },
       },
       {
         q: "Does DistroKid allow AI music?",
         a: "Yes. DistroKid has had an AI music declaration option since 2024. Select 'AI-assisted' or 'AI-generated' depending on your level of human involvement. Their TOS updates regularly, so review it before your next release.",
+        link: { label: "Read our full distribution guide at melodyprompt.com", href: "https://melodyprompt.com/guides/distribute-ai-music" },
       },
       {
         q: "How do I use a custom prompt in Suno AI for hip-hop beats?",
         a: "Use Custom Mode in Suno v4 and paste the GMIV prompt into the Style field. For hip-hop specifically, always include BPM and whether you want vocals or instrumental. Suno's instrumental mode generally produces cleaner beats for further production work.",
+        link: { label: "Read our full Suno guide at melodyprompt.com", href: "https://melodyprompt.com/guides/how-to-create-ai-music" },
       },
       {
         q: "What is the GMIV framework for hip-hop?",
@@ -605,14 +615,17 @@ export const BOOKS: Book[] = [
       {
         q: "Can I release lo-fi AI music on Spotify?",
         a: "Yes — lo-fi is one of the best-performing AI genres on streaming platforms. Spotify's editorial playlists like 'Lo-Fi Beats' accept independent submissions via distributor. The genre's long-form listening behavior (listeners play tracks on repeat for hours) creates favorable streaming metrics for playlist consideration.",
+        link: { label: "Read our full release guide at melodyprompt.com", href: "https://melodyprompt.com/guides/ai-music-release-checklist" },
       },
       {
         q: "Does DistroKid allow AI music for lo-fi releases?",
         a: "Yes, with the required AI declaration during upload. Lo-fi music is particularly common in AI releases and distributors are well-practiced at handling it.",
+        link: { label: "Read our full distribution guide at melodyprompt.com", href: "https://melodyprompt.com/guides/distribute-ai-music" },
       },
       {
         q: "How do I use a custom prompt in Suno AI for lo-fi music?",
         a: "In Custom Mode, paste the GMIV prompt into the Style box. For lo-fi, leave the lyrics field blank to get instrumentals. The 'vinyl crackle' and 'tape saturation' tags are particularly powerful Suno-specific signals that reliably trigger lo-fi texture.",
+        link: { label: "Read our full Suno guide at melodyprompt.com", href: "https://melodyprompt.com/guides/how-to-create-ai-music" },
       },
       {
         q: "What is the GMIV framework?",
@@ -757,14 +770,17 @@ export const BOOKS: Book[] = [
       {
         q: "Can I release AI pop music on Spotify?",
         a: "Yes. Pop is the dominant genre on Spotify and AI pop music releases follow the same distribution path as any independent release. Use DistroKid, TuneCore, or a similar distributor, declare AI involvement, and pitch your tracks to editorial playlists the same way any indie pop artist would.",
+        link: { label: "Read our full release guide at melodyprompt.com", href: "https://melodyprompt.com/guides/ai-music-release-checklist" },
       },
       {
         q: "Does DistroKid allow AI music?",
         a: "Yes — with the required disclosure during upload. DistroKid is one of the most AI-friendly distributors and has clear policies for both AI-assisted and AI-generated music.",
+        link: { label: "Read our full distribution guide at melodyprompt.com", href: "https://melodyprompt.com/guides/distribute-ai-music" },
       },
       {
         q: "How do I use a custom prompt in Suno AI for pop music?",
         a: "Pop music benefits from including structural cues in the Style field — not just the sound but the song architecture. Include whether you want verses, a pre-chorus, a chorus drop, and a bridge in your Suno prompt. Suno v4's 'structure-aware' generation mode responds well to these architectural signals.",
+        link: { label: "Read our full Suno guide at melodyprompt.com", href: "https://melodyprompt.com/guides/how-to-create-ai-music" },
       },
       {
         q: "What makes pop suno prompts different from other genres?",
@@ -912,14 +928,17 @@ export const BOOKS: Book[] = [
       {
         q: "Can I release dark ambient AI music on Spotify?",
         a: "Yes. Dark ambient is a growing niche on Spotify with dedicated editorial playlists. DistroKid and TuneCore handle releases with AI disclosure. The genre's long-form listening patterns (hours-long atmospheric albums) make it commercially viable on streaming platforms.",
+        link: { label: "Read our full release guide at melodyprompt.com", href: "https://melodyprompt.com/guides/ai-music-release-checklist" },
       },
       {
         q: "Does DistroKid allow AI horror music?",
         a: "Yes — DistroKid's AI policy covers all genres including dark ambient and horror soundscapes. Standard AI declaration applies during upload.",
+        link: { label: "Read our full distribution guide at melodyprompt.com", href: "https://melodyprompt.com/guides/distribute-ai-music" },
       },
       {
         q: "How do I use a custom prompt in Suno AI for horror music?",
         a: "Horror music benefits from explicit silence and negative space instructions. In Suno Custom Mode, phrases like 'no percussion,' 'no resolution,' 'silence as structural element' are powerful. The GMIV framework for horror places special emphasis on the Vibe — the more specific and disturbing the scene anchor, the more specific and disturbing the output.",
+        link: { label: "Read our full Suno guide at melodyprompt.com", href: "https://melodyprompt.com/guides/how-to-create-ai-music" },
       },
       {
         q: "What is the GMIV framework for dark ambient?",
@@ -1061,14 +1080,17 @@ export const BOOKS: Book[] = [
       {
         q: "Can I release AI EDM on Spotify?",
         a: "Yes — EDM is one of the highest-velocity genres on Spotify. AI EDM tracks are distributed through DistroKid, TuneCore, or similar with standard AI disclosure. Dance/EDM editorial playlists accept independent submissions.",
+        link: { label: "Read our full release guide at melodyprompt.com", href: "https://melodyprompt.com/guides/ai-music-release-checklist" },
       },
       {
         q: "Does DistroKid allow AI music for EDM releases?",
         a: "Yes. DistroKid's AI policy applies to all genres. EDM is particularly clean in terms of AI disclosure because it's often fully produced instrumentals without samples — no additional copyright clearance required.",
+        link: { label: "Read our full distribution guide at melodyprompt.com", href: "https://melodyprompt.com/guides/distribute-ai-music" },
       },
       {
         q: "How do I use a custom prompt in Suno AI for EDM?",
         a: "EDM benefits from structure-specific prompts. Rather than one prompt for a full 5-minute track, use separate prompts for the intro/build, the breakdown, and the drop. Suno's Continue feature lets you link them while maintaining sonic consistency.",
+        link: { label: "Read our full Suno guide at melodyprompt.com", href: "https://melodyprompt.com/guides/how-to-create-ai-music" },
       },
       {
         q: "What is the GMIV framework for EDM?",
@@ -1212,14 +1234,17 @@ export const BOOKS: Book[] = [
       {
         q: "Can I release AI worship music on Spotify?",
         a: "Yes — Christian/Gospel is one of the most active categories on Spotify with dedicated editorial playlists. AI-generated worship music is treated the same as any other release. Declare AI involvement through your distributor (DistroKid, TuneCore) and submit to Christian music playlists through standard editorial pitching.",
+        link: { label: "Read our full release guide at melodyprompt.com", href: "https://melodyprompt.com/guides/ai-music-release-checklist" },
       },
       {
         q: "Does DistroKid allow AI gospel music?",
         a: "Yes. DistroKid's AI policy applies to all genres including worship and gospel. Declare AI involvement during upload. Many contemporary worship artists use AI in their production workflow already.",
+        link: { label: "Read our full distribution guide at melodyprompt.com", href: "https://melodyprompt.com/guides/distribute-ai-music" },
       },
       {
         q: "How do I use a custom prompt in Suno AI for worship music?",
         a: "Worship music in Suno responds well to specific congregation-size cues (small group vs. large arena), instrument presence (Hammond organ, electric guitar, acoustic), and dynamic arc cues (intimate verse to anthem chorus). Always specify the key — congregational worship needs to be singable, typically in the range of D to G major.",
+        link: { label: "Read our full Suno guide at melodyprompt.com", href: "https://melodyprompt.com/guides/how-to-create-ai-music" },
       },
       {
         q: "What is the GMIV framework for worship music?",
@@ -1363,14 +1388,17 @@ export const BOOKS: Book[] = [
       {
         q: "Can I release AI country music on Spotify?",
         a: "Yes — country is a major commercial genre on Spotify with multiple editorial playlists. AI country music releases through DistroKid or TuneCore with standard AI disclosure. Country-specific playlist pitching through Spotify for Artists follows the same process as any independent country release.",
+        link: { label: "Read our full release guide at melodyprompt.com", href: "https://melodyprompt.com/guides/ai-music-release-checklist" },
       },
       {
         q: "Does DistroKid allow AI folk music?",
         a: "Yes. DistroKid's AI declaration process covers all genres including country and folk. Singer-songwriter folk especially is a clean use case — no sample clearance, no interpolation concerns, straightforward AI declaration.",
+        link: { label: "Read our full distribution guide at melodyprompt.com", href: "https://melodyprompt.com/guides/distribute-ai-music" },
       },
       {
         q: "How do I use a custom prompt in Suno AI for country music?",
         a: "Country music in Suno responds well to specific instrument cues (pedal steel, Telecaster, fiddle), regional specificity (Nashville vs. Texas vs. Appalachian), and storytelling vibe anchors. Always specify BPM and shuffle vs. straight feel — country's rhythmic groove is deeply tied to these distinctions.",
+        link: { label: "Read our full Suno guide at melodyprompt.com", href: "https://melodyprompt.com/guides/how-to-create-ai-music" },
       },
       {
         q: "What is the GMIV framework for country and folk?",
@@ -1530,14 +1558,17 @@ export const BOOKS: Book[] = [
       {
         q: "Can I release AI music on Spotify?",
         a: "Yes — Spotify accepts AI music. You need to release through a distributor (DistroKid, TuneCore, CD Baby) that has an AI disclosure process. Declare your use of AI during the upload. Spotify treats AI music the same as any other indie release in terms of playlist consideration and discovery. The appendix in this book includes a complete release checklist for Spotify, Apple Music, and YouTube Music.",
+        link: { label: "Read our full release guide at melodyprompt.com", href: "https://melodyprompt.com/guides/ai-music-release-checklist" },
       },
       {
         q: "Does DistroKid allow AI music?",
         a: "Yes. DistroKid has an 'AI-assisted' or 'AI-generated' declaration option in their upload flow. Both options are permitted. The main requirement is honest disclosure. DistroKid is generally considered the most straightforward distributor for AI music releases as of 2026.",
+        link: { label: "Read our full distribution guide at melodyprompt.com", href: "https://melodyprompt.com/guides/distribute-ai-music" },
       },
       {
         q: "How do I use custom prompts in Suno AI in 2026?",
         a: "In Suno v4, go to Custom Mode, paste your GMIV prompt in the Style field. You can include: instrument descriptions, genre tags, mood descriptions, BPM, key, and the Vibe anchor. Chapter 3 covers every field in Suno's interface with specific examples for each genre covered in this book series.",
+        link: { label: "Read our full Suno guide at melodyprompt.com", href: "https://melodyprompt.com/guides/how-to-create-ai-music" },
       },
       {
         q: "What's the best way to use Udio prompts?",
