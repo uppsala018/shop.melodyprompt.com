@@ -6,12 +6,12 @@ export function ValueComparison() {
           id="value-heading"
           className="font-display text-2xl font-bold text-white text-center mb-3"
         >
-          The $9.99 Math
+          The $4.99 Math
         </h2>
         <p className="text-center text-white/60 font-serif mb-10 max-w-xl mx-auto">
           One studio-ready prompt — built on the GMIV framework, tested in Suno
-          and Udio — runs about <strong className="text-accent">5¢</strong> when
-          you buy a book at the launch price.
+          and Udio — runs about <strong className="text-accent">2.5¢</strong> when
+          you buy a book at the closing offer price.
         </p>
 
         <div className="overflow-x-auto rounded-2xl border border-white/[0.08]">
@@ -35,14 +35,14 @@ export function ValueComparison() {
             <tbody className="font-serif divide-y divide-white/[0.05]">
               <tr className="bg-accent/10">
                 <td className="px-4 py-3 text-white font-bold">
-                  MelodyPrompt book (launch price)
+                  MelodyPrompt book (closing offer)
                 </td>
                 <td className="px-4 py-3 text-right text-accent font-bold">
-                  $9.99
+                  $4.99
                 </td>
                 <td className="px-4 py-3 text-right text-white/80">200</td>
                 <td className="px-4 py-3 text-right text-accent font-bold">
-                  ~5¢
+                  ~2.5¢
                 </td>
               </tr>
               <tr>
