@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     template: "%s | MelodyPrompt Shop",
   },
   description:
-    "200 studio-ready AI music prompts per book. Built on the GMIV framework, tested on Suno v4 and Udio. 10 genres, $9.99 each.",
+    "200 studio-ready AI music prompts per book. Built on the GMIV framework, tested on Suno v4 and Udio. 10 genres, $4.99 each.",
   keywords: [
     "sad song prompts",
     "suno ai prompts",
@@ -72,6 +72,10 @@ export default function RootLayout({
     <html lang="en" className={`${bricolage.variable} ${newsreader.variable} ${jetbrains.variable}`}>
       <head>
         <link rel="canonical" href="https://shop.melodyprompt.com" />
+        {/* Unregister any stale service workers left from a previous misconfiguration */}
+        <Script id="sw-cleanup" strategy="afterInteractive">
+          {`if ('serviceWorker' in navigator) { navigator.serviceWorker.getRegistrations().then(function(registrations) { registrations.forEach(function(r) { r.unregister(); }); }); }`}
+        </Script>
         {GA_ID && (
           <>
             <Script
