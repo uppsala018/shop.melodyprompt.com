@@ -14,7 +14,7 @@ export const dynamic = "force-static";
 export const metadata: Metadata = {
   title: "Studio-Ready AI Music Prompts — 2,000 Tested Prompts for Suno & Udio",
   description:
-    "200 studio-ready AI music prompts per book. Sad song prompts, cinematic trailer music, hip-hop, lo-fi, pop, EDM, horror, worship, country, and prompt mastery. $9.99 each — tested on Suno v4 and Udio.",
+    "200 studio-ready AI music prompts per book. Sad song prompts, cinematic trailer music, hip-hop, lo-fi, pop, EDM, horror, worship, country, and prompt mastery. $4.99 each — tested on Suno v4 and Udio.",
   alternates: {
     canonical: "https://shop.melodyprompt.com",
     languages: { "en": "https://shop.melodyprompt.com" },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Studio-Ready AI Music Prompts — MelodyPrompt Shop",
     description:
-      "2,000 AI music prompts across 10 genres. Sad song prompts, suno ai epic cinematic trailer music prompts, hip hop suno prompts, and more. $9.99 per book.",
+      "2,000 AI music prompts across 10 genres. Sad song prompts, suno ai epic cinematic trailer music prompts, hip hop suno prompts, and more. $4.99 per book.",
     url: "https://shop.melodyprompt.com",
     images: [
       {
@@ -104,7 +104,7 @@ const itemListJsonLd = {
       description: book.subtitle,
       offers: {
         "@type": "Offer",
-        price: "9.99",
+        price: "4.99",
         priceCurrency: "USD",
         availability: "https://schema.org/InStock",
       },

@@ -1,10 +1,7 @@
 function getLaunchEndDate(): Date {
   const envDate = process.env.NEXT_PUBLIC_LAUNCH_END;
   if (envDate) return new Date(envDate);
-  // Default: 30 days from build time
-  const d = new Date();
-  d.setDate(d.getDate() + 30);
-  return d;
+  return new Date("2026-08-30");
 }
 
 export function SaleBanner() {
@@ -19,18 +16,18 @@ export function SaleBanner() {
   return (
     <div className="bg-accent/10 border-y border-accent/20 py-3 text-center">
       <p className="font-mono text-sm text-white">
-        <span className="font-bold text-accent">LAUNCH OFFER · ENDS SOON</span>
+        <span className="font-bold text-accent">LAST MINUTE CLOSING OFFER · ENDS SOON</span>
         {" — "}
-        Save $20 on every book until{" "}
+        Save $25 on every book until{" "}
         <time dateTime={endIso} className="font-semibold">
           {formatted}
         </time>
         {" · "}
         <span className="line-through opacity-60">Was $29.99</span>
         {"  "}
-        <span className="text-accent font-bold">Now $9.99</span>
+        <span className="text-accent font-bold">Now $4.99</span>
         {" · "}
-        <span className="text-white/70">67% off</span>
+        <span className="text-white/70">83% off</span>
       </p>
     </div>
   );
